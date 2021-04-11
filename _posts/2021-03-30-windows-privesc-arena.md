@@ -1,3 +1,9 @@
+---
+title: Windows PrivEsc Arena
+categories: [TryHackMe, WriteUp, Windows]
+tags: [Widows, TryHackMe, WriteUp, PrivEsc]
+---
+
 # Windows PrivEsc Arena
 > Students will learn how to escalate privileges using a very vulnerable Windows 7 VM. RDP is open.
 

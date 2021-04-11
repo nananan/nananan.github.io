@@ -1,5 +1,10 @@
-# Steel Mountain
+---
+title: Steel Mountain
+categories: [TryHackMe, WriteUp]
+tags: [Steel Mountain, TryHackMe, WriteUp]
+---
 
+# Steel Mountain
 
 Wow, this is my first post! And I will tell you howI resolved the "Steel Mountain" challenge of TryHackMe. 
 The description in the challenge page said:
