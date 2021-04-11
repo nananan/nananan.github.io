@@ -5,6 +5,7 @@ tags: [Widows, TryHackMe, WriteUp, PrivEsc]
 ---
 
 # Windows PrivEsc Arena
+![img-description](/assets/img/posts/windows-privesc/windows_privesc.png)
 > Students will learn how to escalate privileges using a very vulnerable Windows 7 VM. RDP is open.
 
 ### <span style="color:blue">[Task 1] - Connecting to TryHackMe network</span>

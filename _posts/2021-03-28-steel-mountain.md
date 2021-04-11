@@ -5,9 +5,7 @@ tags: [Steel Mountain, TryHackMe, WriteUp]
 ---
 
 # Steel Mountain
-
-Wow, this is my first post! And I will tell you howI resolved the "Steel Mountain" challenge of TryHackMe. 
-The description in the challenge page said:
+![img-description](/assets/img/posts/steel-mountain/steel-mountain.jpg)
 
 >In this room you will enumerate a Windows machine, gain initial access with Metasploit, use Powershell to further enumerate the machine and escalate your privileges to Administrator.
 
