@@ -80,3 +80,29 @@ $ cat class.cs_phpmailer.php
 
 global $classes_dir;
 require_once($classes_dir . 'phpmailer' .DS. 'class.phpmailer.php');
+
+
+- In windows vedi in "Program Files" e "Program Files (x86)" se ci sono programmi strani tipo "PaperStream IP" (come nella macchina Jacko di Proving Grounds)
+
+- Powershell sta dentro:
+C:\Windows\System32\WindowsPowerShell>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is AC2F-6399
+
+ Directory of C:\Windows\System32\WindowsPowerShell
+
+03/18/2019  09:52 PM    <DIR>          .
+03/18/2019  09:52 PM    <DIR>          ..
+03/18/2019  11:20 PM    <DIR>          v1.0
+               0 File(s)              0 bytes
+               3 Dir(s)   6,892,978,176 bytes free
+
+
+- CONROLLA TUTTE LE PORTE DI NMAP!!!!!!!!!
+
+- Se hai una SQLi puoi provare a caricargli uno script php (vedi sezione SQLi del file machine oppure appunti della macchina Medjed di Proving Grounds)
+
+- Se hai le credenziali SSH, puoi uploadare i dile con scp
+
+- Prova sia get sia post
