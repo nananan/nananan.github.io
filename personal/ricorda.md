@@ -106,3 +106,21 @@ dir
 - Se hai le credenziali SSH, puoi uploadare i dile con scp
 
 - Prova sia get sia post
+
+- Se non trovi niente e ci sono solo exploit da autenticato, prova a enumerare ancora! Oppure se hai una password di default, prova il brute forse dell'user
+
+
+- IL BASH HISTORY!!!!!!!!!!!!!!!
+
+- Se vedi .cgi ricorda SHELLSHOCK
+
+- Se vedi immagini nella macchina, prova ad eseguirgli strings
+
+- Se puoi leggere **shadow.backup** nella cartella **/backups**
+
+- Su windows con powershell, [Environment]::Is64BitProcess
+
+
+- Controlla i permessi e gli owner di /usr/bin/bash
+
+- Controlla con icacls i permessi e con sc le configurazioni dei servizi (soprattutto quelli con avvio automatico!!!)

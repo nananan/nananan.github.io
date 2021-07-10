@@ -86,6 +86,7 @@ Presi da https://hacktips.it/guida-privilege-escalation-sistemi-windows/
 
  - **Jobs schedulati:** (nel caso in cui ci siano permessi laschi)
    - ```crontab -l ls -alh /var/spool/cron```
+   - ```ls -la /etc/cron.d/```
    - ```ls -al /etc/ | grep cron```
    - ```ls -al /etc/cron*```
    - ```cat /etc/cron*```
