@@ -6,4 +6,4 @@ order: 4
 
 
 
-Hi, I'm Eliana. I'm an Italian woman interested in CyberSec. 
+Hi, I'm Eliana. I'm an Italian woman interested in CyberSec. I works as Pentester at Bip - Business Integration Partners.
