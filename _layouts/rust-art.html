@@ -1,0 +1,55 @@
+---
+layout: page
+# The layout for Tag page
+---
+
+<!--
+<div id="page-tag">
+  <h1 class="pl-lg-2">
+    <i class="fa fa-tag fa-fw text-muted"></i>
+    {{ page.title }}
+    <span class="lead text-muted pl-2">{{ page.posts | size }}</span>
+  </h1>
+  <ul class="post-content pl-0">
+    {% assign post_long_df = site.data.date_format.post.long | default: '%b %e, %Y' %}
+
+    {% for post in page.posts %}
+    <li class="d-flex justify-content-between pl-md-3 pr-md-3">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="dash flex-grow-1"></span>
+      <span class="text-muted small">{{ post.date | date: post_long_df }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+-->
+
+Looking at a speech from a friend of mine, I found generative art in Rust very interesting. I had wanted to learn Rust for a long time, but I never found anything to do. So looking at my friend's work (you find it <a href="https://www.instagram.com/imnotprovable/"> here </a>) I am impressed and tried to do something.
+<br>
+For now I only had one :D
+<br>
+<br>
+
+<div>
+  <div class="gallery">
+    <a target="_blank" href="../assets/gif/rust_art/out.gif">
+      <img src="/assets/gif/rust_art/out.gif" width="40%" >
+    </a>
+    <!-- <div class="desc">Add a description of the image here</div> -->
+  </div>
+
+  <!-- <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div> -->
+
+</div>
