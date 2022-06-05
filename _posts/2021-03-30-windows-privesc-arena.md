@@ -8,12 +8,12 @@ tags: [Widows, TryHackMe, WriteUp, PrivEsc]
 ![img-description](/assets/img/posts/windows-privesc/windows_privesc.png)
 > Students will learn how to escalate privileges using a very vulnerable Windows 7 VM. RDP is open.
 
-### <span style="color:blue">[Task 1] - Connecting to TryHackMe network</span>
+### <span style="color: var(--link-color);">[Task 1] - Connecting to TryHackMe network</span>
 You don't need me to do this. We just connect in VPN to the TryHackMe network.
 
 <img src="/assets/img/meme/wink.jpg" width="30%" height="30%">
 
-### <span style="color:blue">[Task 2] - Deploy the vulnerable machine</span>
+### <span style="color: var(--link-color);">[Task 2] - Deploy the vulnerable machine</span>
 
 > This room will teach you a variety of Windows privilege escalation tactics, including kernel exploits, DLL hijacking, service exploits, registry exploits, and more. This lab was built utilizing Sagi Shahar's privesc workshop (https://github.com/sagishahar/lpeworkshop) and utilized as part of The Cyber Mentor's Windows Privilege Escalation Udemy course (http://udemy.com/course/windows-privilege-escalation-for-beginners).
 > 
@@ -47,7 +47,7 @@ By run **net user** in a command prompt we retrieve the users on the machine:
 And the other non-default user is **TCM**.
 
 
-### <span style="color:blue">[Task 3] - Registry Escalation - Autorun </span>
+### <span style="color: var(--link-color);">[Task 3] - Registry Escalation - Autorun </span>
 In this task, we use [Autorun](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns) utility that is used to set auto-starting programs upon boot.
 
 > Detection
@@ -133,7 +133,7 @@ We come back to our metasploit listener and we get the shell:
 
 
 
-### <span style="color:blue">[Task 4] - Registry Escalation - AlwaysInstallElevated </span>
+### <span style="color: var(--link-color);">[Task 4] - Registry Escalation - AlwaysInstallElevated </span>
 [AlwaysInstallElevated](https://docs.microsoft.com/en-us/windows/win32/msi/alwaysinstallelevated) policy is used to install a Windows Installer package with elevated (system)privilege. Indeed, this policy grants full administrative rights, so low-privilege users can run installations with elevated privileges, for this reason, this method can make a machine vulnerable.
 
 To check the vulnerability, we must check that the following registry has the **AlwaysInstallElevated** value set to 1:
@@ -209,7 +209,7 @@ Then, we run the command ```msiexec /quiet /qn /i C:\Temp\setup.msi``` and, by r
 
 
 
-### <span style="color:blue">[Task 5] - Service Escalation - Registry </span>
+### <span style="color: var(--link-color);">[Task 5] - Service Escalation - Registry </span>
 This task use misconfiguration in the Windows registry like Task4. But in this case, we have permission to add keys in the HKLM registry by using the regsvc service.
 
 <img src="/assets/img/posts/windows-privesc/task5/meme.jpg" width="40%" height="40%">
@@ -284,7 +284,7 @@ To confirm the successful execution we check if the user is added to the local a
 ![Administrator](/assets/img/posts/windows-privesc/task5/administrator_user.png)
 
 
-### <span style="color:blue">[Task 6] - Service Escalation - Executable Files </span>
+### <span style="color: var(--link-color);">[Task 6] - Service Escalation - Executable Files </span>
 If a user has to write permissions in a folder used by a service, then he can replace the binary with a malicious one. In this way, when the service is restarted, the malicious file will be executed.
 
 > Detection
@@ -323,7 +323,7 @@ Since, just to remember, in the *windows_service.c* file that we compiled to gen
 
 
 
-### <span style="color:blue">[Task 7] - Privilege Escalation - Startup Applications </span>
+### <span style="color: var(--link-color);">[Task 7] - Privilege Escalation - Startup Applications </span>
 In Windows, as in other operating systems, we can configure some applications to run on boot, including their system privilege. So, if we have permission to write the Startup folder, we can execute malicious files automatically after that some user (we hope admin) do the login.
 
 > Detection
@@ -400,7 +400,7 @@ And we want to do privilege escalation!
 
 
 
-### <span style="color:blue">[Task 8] - Service Escalation - DLL Hijacking </span>
+### <span style="color: var(--link-color);">[Task 8] - Service Escalation - DLL Hijacking </span>
 When we execute an application in a Windows system, many of the functionalities of the programs are provided by DLL files. Indeed, when a program starts it looks for DLLs.
 So, if some DLL is missing, and we have the write permission, then we can replace that missing DDL with our malicious file. In this way, when the application starts, it executes our file.
 
@@ -504,7 +504,7 @@ And we confirm the successfully exploit by checking if the user belongs to the l
 ![Administrator](/assets/img/posts/windows-privesc/task8/task8_administrator.png)
 
 
-### <span style="color:blue">[Task 9] - Service Escalation - binPath </span>
+### <span style="color: var(--link-color);">[Task 9] - Service Escalation - binPath </span>
 
 **binPath** is used to specific binary paths to Windows services. If we have permission to modify the configuration, we can exploit this vulnerability.
 To check the permission, we can use **accesschk**.
@@ -546,7 +546,7 @@ Then we start the daclsvc service with the command ```sc start daclsvc``` and fi
 
 
 
-### <span style="color:blue">[Task 10] - Service Escalation - Unquoted Service Paths </span>
+### <span style="color: var(--link-color);">[Task 10] - Service Escalation - Unquoted Service Paths </span>
 
 When a service is started, the Windows system tries to find the location of the executable to run the service. Indeed, if the executable path is enclosed in the quote "" then the system will know exactly where to find it. But, if in the path there are any quotes, then Windows will look for it and execute it in every folder of the path. 
 So, for example, if we have the path 
@@ -618,7 +618,7 @@ Then we start the **unquotedsvc** service (by using the command ```sc start unqu
 
 
 
-### <span style="color:blue">[Task 11] - Potato Escalation - Hot Potato </span>
+### <span style="color: var(--link-color);">[Task 11] - Potato Escalation - Hot Potato </span>
 
 "Hot Potato is a technique that takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing".
 
@@ -659,7 +659,7 @@ The execution and the output of the command ```net localgroup administrators``` 
 
 
 
-### <span style="color:blue">[Task 12] - Password Mining Escalation - Configuration Files </span>
+### <span style="color: var(--link-color);">[Task 12] - Password Mining Escalation - Configuration Files </span>
 Many times the developers or the administrator put the password in the configuration files. Therefore, by searching words like "password" or "passwd" we can obtain the password used in the system. Also, these passwords are obfuscated in base64, so it is easy to retrieve the cleartext.
 
 > Exploitation
@@ -689,7 +689,7 @@ $ echo cGFzc3dvcmQxMjM= | base64 -d
 <img src="/assets/img/posts/windows-privesc/task12_meme.jpg" width="40%" height="40%">
 
 
-### <span style="color:blue">[Task 13] - Password Mining Escalation - Memory </span>
+### <span style="color: var(--link-color);">[Task 13] - Password Mining Escalation - Memory </span>
 Sometimes services save the user credentials in clear text in memory. When this happens, we can dump what is saved in the memory and read the saved credentials.
 
 > Exploitation
@@ -778,7 +778,7 @@ msf6 auxiliary(server/capture/http_basic) > run
 ```
 
 
-### <span style="color:blue">[Task 14] - Privilege Escalation - Kernel Exploits </span>
+### <span style="color: var(--link-color);">[Task 14] - Privilege Escalation - Kernel Exploits </span>
 
 If the Operating Systems is not updated regularly, we can find some older version of the kernel that allows us to use public exploits.
 In this case, the kernel exploit is the **MS16_014**.

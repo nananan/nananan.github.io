@@ -23,7 +23,7 @@ The LiquidFiles groups we refer to are those inside the blue box in the followin
 The most privileged group is "Sysadmins", so, the impact of a successful attack includes access to all aspects of the LiquidFiles system of the application via the System Administrator API key.
 
 
-### <span style="color:blue">Technical Details</span>
+### <span style="color: var(--link-color);">Technical Details</span>
 
 
 To reproduce the attacks, we need the API key of own user (that must be at least of the "Admin Users" group), that we retrieve as follow:

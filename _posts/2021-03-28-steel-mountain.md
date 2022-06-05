@@ -12,7 +12,7 @@ tags: [Steel Mountain, TryHackMe, WriteUp]
 Ok, so we start with the enumeration of the machine.
 
 
-### <span style="color:blue">[Task 1] - Introduction</span>
+### <span style="color: var(--link-color);">[Task 1] - Introduction</span>
 
 #### 1. Deploy the machine. Who is the employee of the month?
 
@@ -243,7 +243,7 @@ This can be helpfull to responde to the first question of the challenge. Indeed,
 So, the name is **Bill Harper**.
 
 
-### <span style="color:blue">[Task 2] - Initial Access</span>
+### <span style="color: var(--link-color);">[Task 2] - Initial Access</span>
 
 
 Now you have deployed the machine, lets get an initial shell!
@@ -308,7 +308,7 @@ After we look around, we found the flag (the file **user.txt**) in the **C:\User
 
 
 
-### <span style="color:blue">[Task 3] - Privilege Escalation</span>
+### <span style="color: var(--link-color);">[Task 3] - Privilege Escalation</span>
 
 > Now that you have an initial shell on this Windows machine as Bill, we can further enumerate the machine and escalate our privileges to root!
 
@@ -378,7 +378,7 @@ We get the root flag in the path **C:\Users\Administrator\Desktop**:
 
 
 
-### <span style="color:blue">[Task 4] - Access and Escalation Without Metasploit</span>
+### <span style="color: var(--link-color);">[Task 4] - Access and Escalation Without Metasploit</span>
 
 > Now let's complete the room without the use of Metasploit.
 > 
