@@ -12,7 +12,7 @@ I love rubber ducks and right now, I got 4 of them, look how they are cute!
 
 <img src="/assets/img/rubber_ducks.jpg" width="70%" height="70%">
 
-The red one didn't have a hat so I bought one for it! It's not fair that it was the only without a hat &#128528;
+The red one didn't have a hat so I bought one for it! It was not fair that it was the only without a hat &#128528;
 (I love also Christmas so what better than a Christmas hat?)
 
 If you want to know more about me, you can take a look at my [Linkedin profile](https://it.linkedin.com/in/cannella-eliana?trk=profile-badge). 
