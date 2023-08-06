@@ -1,6 +1,6 @@
 ---
 title: Steel Mountain
-categories: [TryHackMe, WriteUp]
+categories: [WriteUp, TryHackMe]
 tags: [Steel Mountain, TryHackMe, WriteUp]
 ---
 

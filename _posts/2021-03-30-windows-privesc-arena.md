@@ -1,6 +1,6 @@
 ---
 title: Windows PrivEsc Arena
-categories: [TryHackMe, WriteUp, Windows]
+categories: [WriteUp, TryHackMe]
 tags: [Widows, TryHackMe, WriteUp, PrivEsc]
 ---
 

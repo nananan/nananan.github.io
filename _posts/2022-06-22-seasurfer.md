@@ -1,6 +1,6 @@
 ---
 title: Sea Surfer
-categories: [TryHackMe, WriteUp]
+categories: [WriteUp, TryHackMe]
 tags: [SeaSurfer, TryHackMe, WriteUp]
 ---
 
