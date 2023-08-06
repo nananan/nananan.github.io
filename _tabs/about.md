@@ -7,12 +7,11 @@ order: 5
 
 
 
-Hi, I'm Eliana. I'm an Italian woman interested in CyberSec. I am OSCP certified and I despair myself with CTF.
-I love rubber ducks and right now, I got 4 of them, look how they are cute!
+Hi, I'm Eliana. I'm an Italian woman with a strong interest in CyberSecurity. I am OSCP certified and I despair myself with CTF.
+I love rubber ducks and, at the moment, I own four of them. Just take a look at how adorable they are!
 
 <p style="text-align:center;"><img style="border: 7px solid var(--sidebar-bg); " src="/assets/img/rubber_ducks.jpg" width="70%" height="70%"></p>
 
-The red one didn't have a hat so I bought one for it! It was not fair that it was the only one without a hat &#128528;
-(I love also Christmas so what better than a Christmas hat?)
+The red rubber duck was missing a hat, so I decided to remedy the situation by purchasing a cute Christmas hat for it! It didn't seem fair that it was the only one without a hat &#128528; (Considering my love for Christmas, it seemed like the perfect choice!)
 
-If you want to know more about me, you can take a look at my [Linkedin profile](https://it.linkedin.com/in/cannella-eliana?trk=profile-badge). 
+If you're interested in learning more about me, feel free to check out my [Linkedin profile](https://it.linkedin.com/in/cannella-eliana?trk=profile-badge). 
