@@ -14,4 +14,6 @@ I love rubber ducks and, at the moment, I own four of them. Just take a look at 
 
 The red rubber duck was missing a hat, so I decided to remedy the situation by purchasing a cute Christmas hat for it! It didn't seem fair that it was the only one without a hat &#128528; (Considering my love for Christmas, it seemed like the perfect choice!)
 
-If you're interested in learning more about me, feel free to check out my [Linkedin profile](https://www.linkedin.com/in/cannella-eliana/). 
+If you're interested in learning more about me, feel free to check out my [Linkedin profile](https://www.linkedin.com/in/cannella-eliana/).
+
+I also share cybersecurity content on my [YouTube channel](https://www.youtube.com/@CinnamonSec) — come take a look!
