@@ -16,4 +16,10 @@ The red rubber duck was missing a hat, so I decided to remedy the situation by p
 
 If you're interested in learning more about me, feel free to check out my [Linkedin profile](https://www.linkedin.com/in/cannella-eliana/).
 
-I also share cybersecurity content on my [YouTube channel](https://www.youtube.com/@CinnamonSec) — come take a look!
+I also share cybersecurity content on my platforms:
+
+- 🎥 [YouTube channel](https://www.youtube.com/@CinnamonSec)
+- 🎮 [Twitch channel](https://www.twitch.tv/cinnamonsec)
+- 💬 [Discord](https://discord.com/invite/yCAUwep4Fj)
+
+Come take a look!
